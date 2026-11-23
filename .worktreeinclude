@@ -1,0 +1,10 @@
+AGENTS.local.md
+temporary.local/
+
+# --- IntelliJ project settings, added automatically ---
+# Local IDE project settings.
+.idea/*.xml
+.idea/runConfigurations/
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.run/
