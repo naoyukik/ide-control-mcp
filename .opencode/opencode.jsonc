@@ -1,0 +1,71 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": false,
+  "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "mcp": {
+    "servers": {
+      "jetbrains": {
+        "type": "remote",
+        "url": "http://127.0.0.1:64421/stream"
+      },
+      "intellij-index": {
+        "type": "remote",
+        "url": "http://127.0.0.1:29170/index-mcp/streamable-http"
+      }
+    }
+  },
+  "watcher": {
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      ".git/**",
+      "**/*.min.js",
+      "**/*.map",
+      "**/*.lock"
+    ]
+  },
+  "compaction": {
+    "auto": true
+  },
+  "plugins": [
+    "./plugins/v2/init.ts",
+    "./plugins/v2/ValidateArchitectureTsHook.ts",
+    "./plugins/v2/MemPalaceAutosaveHook.ts"
+  ],
+  "agents": {
+    "conductor-review": {
+      "mode": "subagent",
+      "description": "Conductorトラックの完了成果物をレビューするサブエージェント。plan.md、spec.md、コードスタイルガイドに基づいてコードレビューを実行し、レポートを出力する。",
+      "permissions": [
+        { "action": "edit", "resource": "*", "effect": "deny" },
+        { "action": "shell", "resource": "git diff *", "effect": "allow" },
+        { "action": "shell", "resource": "git log *", "effect": "allow" },
+        { "action": "shell", "resource": "git status *", "effect": "allow" },
+        { "action": "shell", "resource": "git rev-parse *", "effect": "allow" },
+        { "action": "shell", "resource": "git branch --show-current", "effect": "allow" },
+        { "action": "shell", "resource": ".\\gradlew test *", "effect": "allow" },
+        { "action": "shell", "resource": ".\\gradlew :test *", "effect": "allow" },
+        { "action": "shell", "resource": "dir *", "effect": "allow" },
+        { "action": "shell", "resource": "ls *", "effect": "allow" },
+        { "action": "shell", "resource": "cat *", "effect": "allow" }
+      ]
+    },
+    "create-draft-pr": {
+      "mode": "subagent",
+      "description": "GitHub Draft PRを作成するサブエージェント。ブランチ差分、Issue情報、コミット履歴を収集し、構造化された日本語PRタイトル本文を生成してgh CLIで作成する。",
+      "permissions": [
+        { "action": "edit", "resource": "*", "effect": "deny" },
+        { "action": "shell", "resource": "git rev-parse *", "effect": "allow" },
+        { "action": "shell", "resource": "git log *", "effect": "allow" },
+        { "action": "shell", "resource": "git remote get-url origin", "effect": "allow" },
+        { "action": "shell", "resource": "git diff *", "effect": "allow" },
+        { "action": "shell", "resource": "cat *", "effect": "allow" },
+        { "action": "shell", "resource": "gh version", "effect": "allow" },
+        { "action": "shell", "resource": "gh pr create *", "effect": "allow" },
+        { "action": "shell", "resource": "gh api graphql *", "effect": "allow" },
+        { "action": "shell", "resource": "grep *", "effect": "allow" }
+      ]
+    }
+  }
+}
