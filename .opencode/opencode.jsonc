@@ -30,7 +30,6 @@
   },
   "plugins": [
     "./plugins/v2/init.ts",
-    "./plugins/v2/ValidateArchitectureTsHook.ts",
     "./plugins/v2/MemPalaceAutosaveHook.ts"
   ],
   "agents": {
