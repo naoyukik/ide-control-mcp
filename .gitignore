@@ -78,7 +78,7 @@ __pycache__
 *.local
 
 # AI files
-*.local.md
+*.local.*
 AGENTS.override.md
 .inline-review-notes
 
