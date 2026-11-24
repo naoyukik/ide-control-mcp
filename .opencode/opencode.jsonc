@@ -4,11 +4,11 @@
     "servers": {
       "jetbrains": {
         "type": "remote",
-        "url": "http://127.0.0.1:64421/stream"
+        "url": "http://127.0.0.1:{file:jetbrains-mcp.local.port}/stream"
       },
       "intellij-index": {
         "type": "remote",
-        "url": "http://127.0.0.1:29170/index-mcp/streamable-http"
+        "url": "http://127.0.0.1:{file:intellij-index-mcp.local.port}/index-mcp/streamable-http"
       }
     }
   },
