@@ -26,7 +26,7 @@ export default Plugin.define({
         try {
           await ctx.session.prompt({
             sessionID,
-            text: "スキル referencing-commit-convention, operating-jetbrains-projects, ide-index-mcp, operating-git を読み込め。",
+            text: "スキル referencing-commit-convention, operating-jetbrains-projects, operating-git を読み込め。IDE のコード検索・解析には MCP ide-index を使う。利用可能なツールは Code Mode の search で namespace ide-index を指定して確認し、tools['ide-index'].<ツール名> として呼び出すこと。",
           })
         } catch (err) {
           console.error(`[ryntra.init] session.prompt 失敗: ${err}`)
