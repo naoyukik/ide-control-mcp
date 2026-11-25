@@ -1,0 +1,29 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "jetbrains": {
+        "type": "remote",
+        "url": "http://127.0.0.1:{file:jetbrains-mcp.local.port}/stream"
+      },
+      "ide-index": {
+        "type": "remote",
+        "url": "http://127.0.0.1:{file:intellij-index-mcp.local.port}/index-mcp/streamable-http"
+      }
+    }
+  },
+  "watcher": {
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      ".git/**",
+      "**/*.min.js",
+      "**/*.map",
+      "**/*.lock"
+    ]
+  },
+  "compaction": {
+    "auto": true
+  }
+}
