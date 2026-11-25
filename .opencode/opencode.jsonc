@@ -25,9 +25,5 @@
   },
   "compaction": {
     "auto": true
-  },
-  "plugins": [
-    "./plugins/v2/init.ts",
-    "./plugins/v2/MemPalaceAutosaveHook.ts"
-  ]
+  }
 }
