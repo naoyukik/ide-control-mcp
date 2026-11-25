@@ -6,7 +6,7 @@
         "type": "remote",
         "url": "http://127.0.0.1:{file:jetbrains-mcp.local.port}/stream"
       },
-      "intellij-index": {
+      "ide-index": {
         "type": "remote",
         "url": "http://127.0.0.1:{file:intellij-index-mcp.local.port}/index-mcp/streamable-http"
       }
