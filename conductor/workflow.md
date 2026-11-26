@@ -274,17 +274,6 @@ Before marking any task complete, verify:
 ### Integration Testing
 
 -   Test complete user flows
--   Verify database transactions
--   Test authentication and authorization
--   Check form submissions
-
-### Mobile Testing
-
--   Test on actual iPhone when possible
--   Use Safari developer tools
--   Test touch interactions
--   Verify responsive layouts
--   Check performance on 3G/4G
 
 ## Code Review Process
 
@@ -315,21 +304,10 @@ Before requesting review:
 
     -   No hardcoded secrets
     -   Input validation present
-    -   SQL injection prevented
-    -   XSS protection in place
 
 5.  **Performance**
 
-    -   Database queries optimized
-    -   Images optimized
     -   Caching implemented where needed
-
-6.  **Mobile Experience**
-
-    -   Touch targets adequate (44x44px)
-    -   Text readable without zooming
-    -   Performance acceptable on mobile
-    -   Interactions feel native
 
 ## Commit Guidelines
 
@@ -387,14 +365,6 @@ A task is complete when:
 5.  Deploy immediately
 6.  Document in plan.md
 
-### Data Loss
-
-1.  Stop all write operations
-2.  Restore from latest backup
-3.  Verify data integrity
-4.  Document incident
-5.  Update backup procedures
-
 ### Security Breach
 
 1.  Rotate all secrets immediately
@@ -410,19 +380,17 @@ A task is complete when:
 -   [ ] All tests passing
 -   [ ] Coverage >80%
 -   [ ] No linting errors
--   [ ] Mobile testing complete
 -   [ ] Environment variables configured
--   [ ] Database migrations ready
--   [ ] Backup created
+-   [ ] `buildPlugin` と `verifyPlugin` が成功している
 
 ### Deployment Steps
 
 1.  Merge feature branch to main
-2.  Tag release with version
-3.  Push to deployment service
-4.  Run database migrations
-5.  Verify deployment
-6.  Test critical paths
+2.  GitHub Actions runs `buildPlugin`, `check`, and `verifyPlugin` on the push to `main` or the pull request
+3.  Create a draft release for manual review with `releaseDraft`
+4.  Review the draft release and publish it with the version tag
+5.  Verify the published release
+6.  Test critical paths in IntelliJ IDEA
 7.  Monitor for errors
 
 ### Post-Deployment
