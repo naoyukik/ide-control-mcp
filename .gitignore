@@ -103,3 +103,4 @@ AGENTS.override.md
 # MemPalace per-project files
 mempalace.yaml
 entities.json
+.worktreeinclude
