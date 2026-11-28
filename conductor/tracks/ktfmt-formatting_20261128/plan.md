@@ -26,7 +26,7 @@
   - [x] `./gradlew check` が成功することを確認する（testData の VFS ルート許可修正後に成功）
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `e176e63`
 
-## Phase 3: CI 組み込みとドキュメント整備
+## Phase 3: CI 組み込みとドキュメント整備 [checkpoint: 3b16a37]
 
 - [x] Task: CI Build ワークフローへの組み込み `da98bc6`
   - [x] `.github/workflows/build.yml` で ktfmtCheck が実行されることを確認する（`check` 依存に含まれるため、ワークフロー変更は不要）
@@ -34,6 +34,6 @@
   - [x] `.idea/ktfmt.xml` を作成し共有対象へ加える
 - [x] Task: 運用ドキュメントの記載 `3b16a37`
   - [x] README または AGENTS.md へ実行コマンド（ktfmtFormat、ktfmtCheck）と運用方針を記載する
-- [ ] Task: Issue #7 のクローズ条件確認
-  - [ ] spec.md の Acceptance Criteria を満たしていることを確認する
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Issue #7 のクローズ条件確認 `3b16a37`
+  - [x] spec.md の Acceptance Criteria を満たしていることを確認する
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `3b16a37`

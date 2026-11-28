@@ -38,13 +38,13 @@ ktfmt を ktfmt-gradle プラグイン経由で導入する。スタイルは ko
 
 ## Acceptance Criteria
 
-- [ ] `./gradlew check` に ktfmtCheck が含まれ、未整形コードが存在すると失敗する
-- [ ] 既存の全 Kotlin ソースが kotlinlang-style で整形済みである
-- [ ] CI の Build ワークフローで書式乖離が検出される
-- [ ] `.idea/ktfmt.xml` がリポジトリに存在する
-- [ ] README または AGENTS.md に運用方針が記載されている
-- [ ] `tech-stack.md` に ktfmt の導入記録がある
-- [ ] 既存テストがすべて成功する
+- [x] `./gradlew check` に ktfmtCheck が含まれ、未整形コードが存在すると失敗する
+- [x] 既存の全 Kotlin ソースが kotlinlang-style で整形済みである
+- [x] CI の Build ワークフローで書式乖離が検出される
+- [x] `.idea/ktfmt.xml` がリポジトリに存在する
+- [x] README または AGENTS.md に運用方針が記載されている
+- [x] `tech-stack.md` に ktfmt の導入記録がある
+- [x] 既存テストがすべて成功する
 
 ## Out of Scope
 
