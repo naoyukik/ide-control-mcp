@@ -16,9 +16,9 @@
 
 ## Phase 2: 既存ソースへの整形適用（Red / Green 相当）
 
-- [~] Task: Red - ktfmtCheck が未整形差分で失敗することを確認する
-  - [~] `./gradlew ktfmtCheck` を実行し、整形差分が検出されて失敗することを確認する
-  - [~] 差分対象ファイル数を記録する（7 ファイル: Gradle スクリプト 2、main 4、test 1）
+- [x] Task: Red - ktfmtCheck が未整形差分で失敗することを確認する `22da605`
+  - [x] `./gradlew ktfmtCheck` を実行し、整形差分が検出されて失敗することを確認する
+  - [x] 差分対象ファイル数を記録する（7 ファイル: Gradle スクリプト 2、main 4、test 1）
 - [ ] Task: Green - ktfmtFormat 適用と差分コミット
   - [ ] `./gradlew ktfmtFormat` を実行する
   - [ ] `git diff` で整形差分が書式のみであることを確認する
