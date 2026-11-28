@@ -56,7 +56,8 @@ build
 /target
 
 # IDE settings
-.idea/
+.idea/*
+!.idea/ktfmt.xml
 
 # npm package
 /node_modules

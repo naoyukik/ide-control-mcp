@@ -4,6 +4,20 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 
+## コードフォーマット
+
+Kotlin は ktfmt の `kotlinlang-style`（4 スペースインデント）で統一する。
+
+```bash
+# Kotlin ソースと Gradle スクリプトを整形する
+./gradlew ktfmtFormat
+
+# 整形差分を検証する
+./gradlew ktfmtCheck
+```
+
+`./gradlew check` と CI の Build ワークフローでも `ktfmtCheck` が実行される。IntelliJ IDEA で ktfmt プラグインを有効にすると、共有された `.idea/ktfmt.xml` の設定が適用される。
+
 ## Template ToDo list
 - [x] Create a new [IntelliJ Platform Plugin Template][template] project.
 - [ ] Get familiar with the [template documentation][template].

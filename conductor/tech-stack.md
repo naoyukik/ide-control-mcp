@@ -15,6 +15,7 @@
 | Gradle Wrapper | 9.9.2 | `gradle/wrapper/gradle-wrapper.properties` |
 | IntelliJ Platform Gradle Plugin | 2.20.1 | `settings.gradle.kts` の `org.jetbrains.intellij.platform.settings` |
 | Gradle Changelog Plugin | 2.5.0 | `settings.gradle.kts` の `org.jetbrains.changelog` |
+| ktfmt-gradle | 0.28.0 | Gradle Plugin Portal。内部で ktfmt 0.65 を使用し、Kotlin 2.4.21 に対応する |
 | Foojay Resolver Convention | 1.0.0 | `settings.gradle.kts` の `org.gradle.toolchains.foojay-resolver-convention` |
 
 有効な設定。
@@ -41,7 +42,9 @@
 ## 品質ツール方針
 
 - `check` と `verifyPlugin` を CI のゲートとして扱う。
-- カバレッジ計測ツールと静的解析ツールは未導入である。導入時は本ファイルに追記する。
+- ktfmt-gradle の `kotlinLangStyle()` を採用し、4 スペースインデントの Kotlin 公式コーディング規約に統一する。
+- `ktfmtCheck` を `check` 経由で実行し、ローカルと CI で同じ書式検証を行う。
+- カバレッジ計測ツールと ktfmt 以外の静的解析ツールは未導入である。導入時は本ファイルに追記する。
 
 ## 変更手順
 

@@ -6,6 +6,7 @@ pluginManagement {
     plugins {
         id("org.jetbrains.kotlin.jvm") version "2.4.21"
         id("org.jetbrains.changelog") version "2.5.0"
+        id("com.ncorti.ktfmt.gradle") version "0.28.0"
     }
 }
 
@@ -20,9 +21,8 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
 
-        // IntelliJ Platform Gradle Plugin Repositories Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-repositories-extension.html
-        intellijPlatform {
-            defaultRepositories()
-        }
+        // IntelliJ Platform Gradle Plugin Repositories Extension - read more:
+        // https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-repositories-extension.html
+        intellijPlatform { defaultRepositories() }
     }
 }
