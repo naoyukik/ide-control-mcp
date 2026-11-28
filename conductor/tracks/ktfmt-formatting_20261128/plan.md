@@ -3,7 +3,7 @@
 - Track ID: ktfmt-formatting_20261128
 - Spec: [spec.md](./spec.md)
 
-## Phase 1: 技術スタックの記録と Gradle 組み込み
+## Phase 1: 技術スタックの記録と Gradle 組み込み [checkpoint: 86b8408]
 
 - [x] Task: tech-stack.md へ ktfmt の追記 `bbb48b9`
   - [x] 品質ツール方針へ ktfmt-gradle プラグイン、バージョン、kotlinlang-style を記録する
@@ -12,7 +12,7 @@
   - [x] ktfmt-gradle の最新安定版を確認する
   - [x] `build.gradle.kts` へプラグイン適用と kotlinlang-style を明示する
   - [x] `./gradlew tasks` で ktfmtFormat / ktfmtCheck が認識されることを確認する
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `86b8408`
 
 ## Phase 2: 既存ソースへの整形適用（Red / Green 相当）
 
