@@ -4,6 +4,11 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.intellij.platform")
     id("org.jetbrains.changelog")
+    id("com.ncorti.ktfmt.gradle") version "0.28.0"
+}
+
+ktfmt {
+    kotlinLangStyle()
 }
 
 dependencies {
