@@ -37,3 +37,6 @@
 - [x] Task: Issue #7 のクローズ条件確認 `3b16a37`
   - [x] spec.md の Acceptance Criteria を満たしていることを確認する
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `3b16a37`
+
+## Phase: PR Preparation
+- [x] Task: main との差分に含まれる rootProject.name の巻き戻りを防止 `bb83935`
