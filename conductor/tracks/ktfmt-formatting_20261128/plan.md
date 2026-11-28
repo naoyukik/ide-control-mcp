@@ -19,11 +19,11 @@
 - [x] Task: Red - ktfmtCheck が未整形差分で失敗することを確認する `22da605`
   - [x] `./gradlew ktfmtCheck` を実行し、整形差分が検出されて失敗することを確認する
   - [x] 差分対象ファイル数を記録する（7 ファイル: Gradle スクリプト 2、main 4、test 1）
-- [ ] Task: Green - ktfmtFormat 適用と差分コミット
-  - [ ] `./gradlew ktfmtFormat` を実行する
-  - [ ] `git diff` で整形差分が書式のみであることを確認する
-  - [ ] 整形差分をコミットする（`style: apply ktfmt formatting to existing sources`）
-  - [ ] `./gradlew check` が成功することを確認する
+- [x] Task: Green - ktfmtFormat 適用と差分コミット `e176e63`
+  - [x] `./gradlew ktfmtFormat` を実行する
+  - [x] `git diff` で整形差分が書式のみであることを確認する
+  - [x] 整形差分をコミットする（`fa8b09a`）
+  - [x] `./gradlew check` が成功することを確認する（testData の VFS ルート許可修正後に成功）
 - [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
 
 ## Phase 3: CI 組み込みとドキュメント整備
