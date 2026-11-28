@@ -42,7 +42,8 @@
 - [x] Task: main との差分に含まれる rootProject.name の巻き戻りを防止 `bb83935`
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `73a85cb`
 
-## Phase: Review Fixes
-- [~] Task: ktfmt プラグインバージョンを settings.gradle.kts へ集約
-- [~] Task: 検証専用タスクの記録 SHA を修正
-- [~] Task: PR Preparation のチェックポイントと Git note を補完
+## Phase: Review Fixes [checkpoint: d7935d2]
+- [x] Task: ktfmt プラグインバージョンを settings.gradle.kts へ集約 `d7935d2`
+- [x] Task: 検証専用タスクの記録 SHA を修正 `d7935d2`
+- [x] Task: PR Preparation のチェックポイントと Git note を補完 `d7935d2`
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `d7935d2`
