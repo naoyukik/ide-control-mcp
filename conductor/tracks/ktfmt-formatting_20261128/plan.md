@@ -28,15 +28,21 @@
 
 ## Phase 3: CI 組み込みとドキュメント整備 [checkpoint: 3b16a37]
 
-- [x] Task: CI Build ワークフローへの組み込み `da98bc6`
+- [x] Task: CI Build ワークフローへの組み込み `75aae05`
   - [x] `.github/workflows/build.yml` で ktfmtCheck が実行されることを確認する（`check` 依存に含まれるため、ワークフロー変更は不要）
 - [x] Task: IDE 設定の共有 `d609cf1`
   - [x] `.idea/ktfmt.xml` を作成し共有対象へ加える
 - [x] Task: 運用ドキュメントの記載 `3b16a37`
   - [x] README または AGENTS.md へ実行コマンド（ktfmtFormat、ktfmtCheck）と運用方針を記載する
-- [x] Task: Issue #7 のクローズ条件確認 `3b16a37`
+- [x] Task: Issue #7 のクローズ条件確認 `1c93d5c`
   - [x] spec.md の Acceptance Criteria を満たしていることを確認する
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `3b16a37`
 
-## Phase: PR Preparation
+## Phase: PR Preparation [checkpoint: 73a85cb]
 - [x] Task: main との差分に含まれる rootProject.name の巻き戻りを防止 `bb83935`
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `73a85cb`
+
+## Phase: Review Fixes
+- [~] Task: ktfmt プラグインバージョンを settings.gradle.kts へ集約
+- [~] Task: 検証専用タスクの記録 SHA を修正
+- [~] Task: PR Preparation のチェックポイントと Git note を補完
