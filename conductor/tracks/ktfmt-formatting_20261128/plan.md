@@ -28,8 +28,8 @@
 
 ## Phase 3: CI 組み込みとドキュメント整備
 
-- [ ] Task: CI Build ワークフローへの組み込み
-  - [ ] `.github/workflows/build.yml` で ktfmtCheck が実行されることを確認する（`check` 依存に含まれる場合は明示不要、その旨を確認する）
+- [x] Task: CI Build ワークフローへの組み込み `da98bc6`
+  - [x] `.github/workflows/build.yml` で ktfmtCheck が実行されることを確認する（`check` 依存に含まれるため、ワークフロー変更は不要）
 - [ ] Task: IDE 設定の共有
   - [ ] `.idea/ktfmt.xml` を作成し共有対象へ加える
 - [ ] Task: 運用ドキュメントの記載
