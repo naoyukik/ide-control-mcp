@@ -5,9 +5,9 @@
 
 ## Phase 1: 技術スタックの記録と Gradle 組み込み
 
-- [ ] Task: tech-stack.md へ ktfmt の追記
-  - [ ] 品質ツール方針へ ktfmt-gradle プラグイン、バージョン、kotlinlang-style を記録する
-  - [ ] 実装より先に `tech-stack.md` を更新する（workflow 原則 2）
+- [x] Task: tech-stack.md へ ktfmt の追記 `bbb48b9`
+  - [x] 品質ツール方針へ ktfmt-gradle プラグイン、バージョン、kotlinlang-style を記録する
+  - [x] 実装より先に `tech-stack.md` を更新する（workflow 原則 2）
 - [ ] Task: ktfmt-gradle プラグインの適用
   - [ ] ktfmt-gradle の最新安定版を確認する
   - [ ] `build.gradle.kts` へプラグイン適用と kotlinlang-style を明示する
