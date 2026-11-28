@@ -30,8 +30,8 @@
 
 - [x] Task: CI Build ワークフローへの組み込み `da98bc6`
   - [x] `.github/workflows/build.yml` で ktfmtCheck が実行されることを確認する（`check` 依存に含まれるため、ワークフロー変更は不要）
-- [ ] Task: IDE 設定の共有
-  - [ ] `.idea/ktfmt.xml` を作成し共有対象へ加える
+- [x] Task: IDE 設定の共有 `d609cf1`
+  - [x] `.idea/ktfmt.xml` を作成し共有対象へ加える
 - [ ] Task: 運用ドキュメントの記載
   - [ ] README または AGENTS.md へ実行コマンド（ktfmtFormat、ktfmtCheck）と運用方針を記載する
 - [ ] Task: Issue #7 のクローズ条件確認
