@@ -14,7 +14,7 @@
   - [x] `./gradlew tasks` で ktfmtFormat / ktfmtCheck が認識されることを確認する
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `86b8408`
 
-## Phase 2: 既存ソースへの整形適用（Red / Green 相当）
+## Phase 2: 既存ソースへの整形適用（Red / Green 相当） [checkpoint: e176e63]
 
 - [x] Task: Red - ktfmtCheck が未整形差分で失敗することを確認する `22da605`
   - [x] `./gradlew ktfmtCheck` を実行し、整形差分が検出されて失敗することを確認する
@@ -24,7 +24,7 @@
   - [x] `git diff` で整形差分が書式のみであることを確認する
   - [x] 整形差分をコミットする（`fa8b09a`）
   - [x] `./gradlew check` が成功することを確認する（testData の VFS ルート許可修正後に成功）
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) `e176e63`
 
 ## Phase 3: CI 組み込みとドキュメント整備
 
